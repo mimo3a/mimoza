@@ -2,20 +2,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>Студия мебели Мимоза</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-
 <form id="athoriz">
-<div>
-<label for="name">Name</label>
-<input type="text" name="name" placeholder="First Name" required pattern="[A-Z]{1,2}([\-][a-z]{4,5}){0.1}" />
+<div class="container">
+<label class="bigSize"for="name">Name</label>
+<input class="bigSize" type="text" name="name" placeholder="First Name" required pattern="[A-Z]{1,2}([\-][a-z]{4,5}){0.1}" />
 </div>
-<div>
+<div class="container">
 <label for="age">Age</label>
 <input type="number" name="age" placeholder="Age" required pattern="[10-40]" />
 </div>
-<div>
-<label for="name">Country</label>
+<div class="container">
+<label for="Country">Country</label>
+
 <form action="/action_page.php">
   <select name="Country">
     <option value="Ukraine">Ukraine</option>
@@ -24,7 +25,9 @@
     <option value="Canada">Canada</option>
   </select>
 </div>
- <button>submit</button> 	 	
+<input type="radio" name="gender" value="male">
+<input type="radio" name="gender" >
+ <button class="container">submit</button>
 </form>
 </body>
 </html>
