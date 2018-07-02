@@ -1,10 +1,8 @@
 h1{
-    background: rgb(105, 110, 95);
+    background: yellowgreen;
     color: black;
     font-size:1.5em;
     font-family: Arial, Verdana, sans-serif;
-    height: 24px;
-    text-align: center;
 }
 hr {
     color: blue;
@@ -15,21 +13,12 @@ body {
     color: brown;
     font-family: Tahoma, Bodoni, sans-serif;
     line-height: 1em;
-    
+    background: yellow;
 }
 #buttons {
-    background-color:red;
+    background-color:;
 }
 #gender {
-    background-color:
-    ;
+    background-color: plum;
     font-size: 2em; 
-}
-form {
-    width:50%;
-    border: 2px solid red;
-    background-color: aqua;
-
-}
-#name :hover{ 
 }

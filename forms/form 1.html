@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Студия мебели Мимоза</title>
+  <title>Разметка формы</title>
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-<form id="athoriz">
-<div class="container">
-<label class="bigSize"for="name">Name</label>
-<input class="bigSize" type="text" name="name" placeholder="First Name" required pattern="[A-Z]{1,2}([\-][a-z]{4,5}){0.1}" />
-</div>
-<div class="container">
-<label for="age">Age</label>
-<input type="number" name="age" placeholder="Age" required pattern="[10-40]" />
-</div>
-<div class="container">
-<label for="Country">Country</label>
-
-<form action="/action_page.php">
-  <select name="Country">
-    <option value="Ukraine">Ukraine</option>
-    <option value="USA">USA</option>
-    <option value="Germany">Germany</option>
-    <option value="Canada">Canada</option>
-  </select>
-</div>
-<input type="radio" name="gender" value="male">
-<input type="radio" name="gender" >
- <button class="container">submit</button>
-</form>
-</body>
-</html>
+  <h1>Форма, состоящая из нескольких частей</h1>
+  <hr>
+   <div>
+      <form action="bin/guestbook.php" method="POST">
+  <h1>Name and password</h1> 
+  <div id="name">
+      <p>Name: <input type="text" name="firstname" size="30" placeholder="First Name" required pattern="[A-Z]{1,2}([\-][a-z]{4,5}){0.1}"</p>
+  </div>
+      <p>Passward:<input type="password" name="psswd" size="30"</p>
+  <h1>What kind of furniture are you interested?</h1>
+      <p><input type="checkbox" name="furnit" value="kitchen" checked="checked">Kitchen</p>
+      <p><input type="checkbox" name="furnit" value="cabinets">Cabinets</p>
+      <p><input type="checkbox" name="furnit" value="begroom">Begroom</p>
+      <p><input type="checkbox" name="furnit" value="office">Office</p>
+  <h1> Gender information</h1>
+  <div id="gender">
+      <p>your sex</p>
+      <p><input type="radio" name="gender" value="male">Male</p> 
+      <p><input type="radio" name="gender" value="female">Female</p>
+  </div>
+  <h1> Age information</h1>
+      <p>Age<input type="number" name="age" required pattern="[10-40]"></p>
+      
+  <h1> Living place</h1>
+      <p>Country<select name="country">
+            <option value="Ukraine">Ukraine</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Canada">Canada</option>
+            <option value="France">France</option>
+            </select>
+      <p id="buttons">
+        <input type="submit" value="send">
+        <input type="reset" value="clean">
+      </p>
+       </form>
+     </div>
+    </body>
+</html> 
+>>>>>>> 5e1c366c13e0490b05f7faed5836f1cf25dc8dd1
