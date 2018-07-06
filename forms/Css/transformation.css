@@ -1,0 +1,9 @@
+.inputText{
+	position: absolute; 
+	transition: .5s; 
+	opacity: .5;
+}
+
+.focus .inputText{
+	transform: translateY( -30px );
+}
