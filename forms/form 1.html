@@ -2,9 +2,48 @@
 <head>
 	<meta charset="utf-8">
   <title>Разметка формы</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
+	<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+	<link rel="stylesheet" href="css/transformation.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body>
+	<section>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="formBox">
+					<form>
+						<div class="row">
+							<div class="col-sm-12">
+								<h1>Contact Us</h1>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="inputBox" style="margin-bottom: 40px; box-sizing: border-box;">
+										<div class="inputText">First Name</div>
+										<input type="text" name=""  class="input" style="border:none; outline: none; border-bottom: 2px solid black;" />
+									</div>
+									<div class="inputBox" style="margin-bottom: 40px; box-sizing: border-box;">
+										<div class="inputText">Last Name</div>
+										<input type="text" name=""  class="input" style="border:none; outline: none; border-bottom: 2px solid black;" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" >
+		$(".input").focus( function() {
+			$(this).parent().addClass( "focus" );
+		}).blur( function() {
+			if( $(this).val() === '' ) {
+				$(this).parent().removeClass( "focus" );
+			}
+		});
+	</script>
   <h1>Форма, состоящая из нескольких частей</h1>
   <hr>
   <fieldset>
