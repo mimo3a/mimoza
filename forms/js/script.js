@@ -1,20 +1,27 @@
 submit.addEventListener('click', function(e) {
-    var firstNumber = first.value;  // read value from input with id="str"
+    var firstNumber = Number(first.value);  // read value from input with id="str"
+    var secondNumber = Number(second.value);  // read value from input with id="str"
+    var checkingNumber= Number(checking.value);
     //var res = str.split('').reverse().join(''); // reverse symbols in a string
     //firstP.innerHTML = firstNumber; // write result to span with is="result"
     
 
 
-    var e = document.getElementById("math");
-var action = e.options[e.selectedIndex].text;
+    
+var action = math.options[math.selectedIndex].text;
 var sign;
 switch(action){
-case 'plus' : sign = Number(firstNumber) + Number(firstNumber); break;
-case 'minus' : sign = '-'; break
-case 'multi' : sign = firstNumber * firstNumber; break
-case 'division' : sign = '/'; break
+case 'plus' : sign = firstNumber + secondNumber; break;
+case 'minus' : sign = firstNumber - secondNumber; break;
+case 'multi' : sign = firstNumber * secondNumber; break;
+case 'division' : sign = firstNumber / secondNumber; break;
 }
-
 alert(sign);
-    e.preventDefault(); // prevent form submission
-  });
+
+  
+  if (checkingNumber==sign) {
+      document.getElementById("result").innerHTML="CORRECT";}
+      else {
+    document.getElementById("result").innerHTML="WRONG";
+};
+});
