@@ -11,17 +11,18 @@ submit.addEventListener('click', function(e) {
 var action = math.options[math.selectedIndex].text;
 var sign;
 switch(action){
-case 'plus' : sign = firstNumber + secondNumber; break;
+case 'plus'  : sign = firstNumber + secondNumber; break;
 case 'minus' : sign = firstNumber - secondNumber; break;
 case 'multi' : sign = firstNumber * secondNumber; break;
-case 'division' : sign = firstNumber / secondNumber; break;
+case 'division':sign= firstNumber / secondNumber; break;
 }
 alert(sign);
-
-  
   if (checkingNumber==sign) {
-      document.getElementById("result").innerHTML="CORRECT";}
+      document.getElementById("result").innerHTML="CORRECT";
+      document.getElementById("grade").style.backgroundColor="green"}
       else {
     document.getElementById("result").innerHTML="WRONG";
+    document.getElementById("grade").style.backgroundColor="red";
+    document.getElementById("grade").style.borderWidth="2 px";
 };
 });

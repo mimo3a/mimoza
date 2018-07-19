@@ -2,34 +2,35 @@
 <head>
 	<meta charset="utf-8">
   <title>Разметка формы</title>
-	<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+	<link rel="stylesheet" href="css/stylesheet.css"> 
 </head>
 <body>
-  <h1>Форма для проверки математических дуйствий</h1>
+  <h1>Форма для проверки математических действий</h1>
   <hr>
    <div>
-      <form action="bin/guestbook.php" method="POST">
-  <h1>Enter meanings</h1> 
-  <div id="name">
-      <p> First number: <input type="number" id = "first" name="firstNumber" placeholder="First number" ></p>
-      <p> Second number: <input type="number" id="second" name="secondNumber" placeholder="Second number"> </p>
-  </div>
-  <h1> Math action</h1>
-      <p>Math<select id = "math" name="math">
-            <option value="plus">plus</option>
-            <option value="minus">minus</option>
-            <option value="multi">multi</option>
-            <option value="division">division</option>
+      <form action="bin/guestbook.php" method="POST" id="firstForm" >
+       <h1>Enter meanings</h1> 
+         <div id="name">
+          <p> First number: <input type="number" id = "first" name="firstNumber" placeholder="First number" ></p>
+          <p> Second number: <input type="number" id="second" name="secondNumber" placeholder="Second number"> </p>
+         </div>
+       <h1> Math action</h1>
+          <p>Math<select id = "math" name="math">
+              <option value="plus">plus</option>
+              <option value="minus">minus</option>
+              <option value="multi">multi</option>
+              <option value="division">divide</option>
             </select>
-      <p> result: <input type="number" id="checking" name="check" placeholder="enter result"></p>     
-      <p>
-        <!-- <input type="submit" value="send"> -->
-        <input type="button" id = "submit" value="check">
-      </p>
+          <p> result: <input type="number" id="checking" name="check" placeholder="enter result"></p>     
+          <p>
+            <input type="button" id = "submit" value="check">
+          </p>
        </form>
      </div>
-     <h1> Your result is</h1>
-     <h1 id="result">fffff</h1>
+     <div id="grade" border=1px>
+     <span id="result">Your answer is</span>
+    </div>
+     <h1></h1>
      <script src="js/script.js"></script>
     </body>
 </html> 
