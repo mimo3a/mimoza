@@ -32,5 +32,6 @@ case 'division' : expected = firstNumber / secondNumber; break;
      localStorage["negative"] = Number(localStorage["negative"])+1;
      document.getElementById("grade").style.backgroundColor="red" ; 
  };
- document.getElementById("storeCorrect").innerHTML=localstore["possitive"];
+ storeCorrect.innerHTML=localstore["possitive"];
+ storeWrong.innerHTML=localStorage["negative"];
 });

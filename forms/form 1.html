@@ -2,12 +2,13 @@
 <head>
 	<meta charset="utf-8">
   <title>Разметка формы</title>
-	<link rel="stylesheet" href="css/stylesheet.css"> 
+  <link rel="stylesheet" href="css/stylesheet.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 <body>
   <h1>Форма для проверки математических действий</h1>
   <hr>
-   <div>
+<!--<div>
       <form action="bin/guestbook.php" method="POST" id="firstForm" >
        <h1>Enter meanings</h1> 
          <div id="name">
@@ -31,9 +32,58 @@
      <span id="result">Your answer is</span>
     </div>
     <div>
-     <h1>correct<span id="storeCorrect">55555</span>c</h1>
+     <h1>correct<span id="storeCorrect"></span>c</h1>
      <h1>wrong<span id="storeWrong">66666</span></h1>
+    </div>-->
+
+<div class="container">
+    <div class="row">
+      <h1>first row</h1> 
     </div>
+    <div class="row">
+      <div class="col-md-2" style='border:1px solid rgb(139, 14, 14); background: green'>two</div>
+      <div class="col-md-3" style='border:1px solid rgb(139, 14, 14); background: purple'>three</div>
+      <div class="col-md-1" style='border:1px solid rgb(139, 14, 14); background: pink'>one</div>
+      <div class="col-md-6" style='border:1px solid rgb(139, 14, 14); background: blue'>six</div>
+      </div>
+    <div class="row">
+      <div class="col-md-4" style='border:1px solid black'>
+        <form action="bin/guestbook.php" method="POST" id="firstForm" >
+          <h1>Enter meanings</h1> 
+            <div id="name">
+             <p> First number: <input type="number" id = "first" name="firstNumber" placeholder="First number" ></p>
+             <p> Second number: <input type="number" id="second" name="secondNumber" placeholder="Second number"> </p>
+            </div>
+          <h1> Math action</h1>
+             <p>Math<select id = "math" name="math">
+                 <option value="plus">plus</option>
+                 <option value="minus">minus</option>
+                 <option value="multi">multi</option>
+                 <option value="division">divide</option>
+               </select>
+             <p> result: <input type="number" id="checking" name="check" placeholder="enter result"></p>     
+             <p>
+               <input type="button" id = "submit" value="check">
+             </p>
+          </form>
+      </div>
+      <div class="col-md-4" style='border:1px solid black'>
+        <div id="grade" border=1px>
+          <span id="result">Your answer is</span>
+         </div>
+      </div> 
+      <div class="col-md-4" style='border:1px solid black'>
+        <div>
+          <h1>correct<span id="storeCorrect">55555</span></h1>
+          <h1>wrong<span id="storeWrong">66666</span></h1>
+         </div>
+      </div> 
+    </div>
+  </div>
+
      <script src="js/script.js"></script>
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
     </body>
 </html> 
