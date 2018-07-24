@@ -23,6 +23,6 @@ alert(sign);
       else {
     document.getElementById("result").innerHTML="WRONG";
     document.getElementById("grade").style.backgroundColor="red";
-    document.getElementById("grade").style.borderWidth="2 px";
+    document.getElementById("grade").style.borderWidth="4px";
 };
 });
