@@ -14,19 +14,21 @@ p {
 #wrapper {
     margin: 0 auto;
     width: 1000px;
+    height: 800px;
 }
 
 #headerwrap {
     width: 1000px;
+    height: 100px;
     float: left;
     margin: 0 auto;
 }
 
 #header {
-    height: 100px;
+    height: 90px;
     background: 
-    url(images/logo.jpg) center repeat;
-    background-color: #12ee54;
+    url(images/logo.jpg) center ;
+    background-color: white;
     border-radius: 10px;
     border: 1px solid #eb521f;
     margin: 5px;
@@ -36,7 +38,7 @@ p {
     font-size: 2em;
 }
 #navigationwrap {
-    width: 1000px;
+    width: 980px;
     float: left;
     margin: 0 auto;
     text-align: center;
@@ -54,13 +56,14 @@ p {
     
 }
 
-#contentwrap {
+#workswrap {
     width: 850px;
+    height: 700px;
     float: left;
     margin: 0 auto;
 }
 
-#content {
+#main {
     background: #FFFFFF;
     border-radius: 10px;
     border: 1px solid #ebebeb;
@@ -69,8 +72,11 @@ p {
 
 #rightcolumnwrap {
     width: 150px;
+    height: 550px;
     float: left;
     margin: 0 auto;
+    overflow-y: scroll;
+    font-size: 10px;
 }
 
 #rightcolumn {
@@ -109,4 +115,18 @@ p {
 }
 #textLogo:{
     font-size: 2em;
+}
+#wrapper {
+    width: 1000px;
+    background: #33FF66;
+    border-radius: 10px;
+    border: 1px solid #1feb52;
+    margin:auto; 
+}
+.wrap {
+    width: 850px;
+    height: 700px;
+    color: blue;
+    float: left;
+    margin: 0 auto; 
 }

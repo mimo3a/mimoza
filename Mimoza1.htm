@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Мебельная Мастерская Мимоза</title>
-<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta charset="UTF-8">
 <link rel="stylesheet"  href="css/mysheet1.css"/>
 </head>
 <body>
@@ -15,45 +15,88 @@
         </div>
         <div id="navigationwrap">
             <div id="navigation">
-                <p> <a div="menuMain" onclick="selectMain()" style="cursor: pointer">Главная</a> 
-                    <a div="menuWorks" onclick="selectWorks()"style="cursor: pointer" >Наши работы</a> 
-                    <a div="menuServis" onclick="selecServis()"style="cursor: pointer">Услуги</a> 
-                    <a div="menuContacts" onclick="selectContacts()"style="cursor: pointer" >Контакты</a> 
-                </p>
+                <nav><span id="menuMain" onclick="selectMain()" style="cursor: pointer">Главная</span> 
+                    <span id="menuWorks" onclick="selectWorks()"style="cursor: pointer" >Наши работы</span> 
+                    <span id="menuServise" onclick="selectServise()"style="cursor: pointer">Услуги</span> 
+                    <span id="menuContacts" onclick="selectContacts()"style="cursor: pointer" >Контакты</span> 
+                </nav>
              </div>
         </div>
-        <div id="contentwrap">
-        <div id="content">
-           <p>Киров. 11 июля в ходе торжественного мероприятия по запуску нового производства премиальной березовой фанеры Вятского фанерного комбината Segezha Group (входит в АФК «Система») и Российский экспортный центр (РЭЦ) подписали Соглашение о сотрудничестве. Документ подписали Президент, Председатель правления Segezha Group Михаил Шамолин и Исполнительный директор АО «Российский экспортный центр» Алексей Тюпанов.
+        <div id="contentmain" style="display:block">
+            <div class="wrap">
+                <div id="main">
+                    <p>Киров. 11 июля в ходе торжественного мероприятия по запуску нового производства премиальной березовой фанеры Вятского фанерного комбината Segezha Group (входит в АФК «Система») и Российский экспортный центр (РЭЦ) подписали Соглашение о сотрудничестве. Документ подписали Президент, Председатель правления Segezha Group Михаил Шамолин и Исполнительный директор АО «Российский экспортный центр» Алексей Тюпанов.
 
-                Российский экспортный центр, как государственный институт поддержки и развития экспорта, способствующий расширению возможностей продвижения российского бизнеса на зарубежные рынки, и Segezha Group, как российская экспортно-ориентированная компания, договорились о синхронизации и реализации различных форм и инструментов поддержки экспорта результатов высокотехнологичного производства группы.
+                        Российский экспортный центр, как государственный институт поддержки и развития экспорта, способствующий расширению возможностей продвижения российского бизнеса на зарубежные рынки, и Segezha Group, как российская экспортно-ориентированная компания, договорились о синхронизации и реализации различных форм и инструментов поддержки экспорта результатов высокотехнологичного производства группы.
                 
-                В рамках Соглашения стороны планируют разрабатывать совместные общественные и правовые инициативы по вопросам стимулирования экспорта продукции активов Segezha Group с опорой на возможности зарубежных представительств РЭЦ.
+                        В рамках Соглашения стороны планируют разрабатывать совместные общественные и правовые инициативы по вопросам стимулирования экспорта продукции активов Segezha Group с опорой на возможности зарубежных представительств РЭЦ.
                 
-                Взаимное сотрудничество также предполагает организацию совместных маркетинговых исследований внутреннего и внешнего рынков, поиск зарубежных партнеров, содействие в оформлении экспортных контрактов и поддержку при прохождении экспортных процедур. Кроме того, в компетенции Российского экспортного центра - помощь в международной адаптации товаров группы компаний и обмен значимой информацией по улучшению условий ведения холдингом экспортной деятельности.
+                        Взаимное сотрудничество также предполагает организацию совместных маркетинговых исследований внутреннего и внешнего рынков, поиск зарубежных партнеров, содействие в оформлении экспортных контрактов и поддержку при прохождении экспортных процедур. Кроме того, в компетенции Российского экспортного центра - помощь в международной адаптации товаров группы компаний и обмен значимой информацией по улучшению условий ведения холдингом экспортной деятельности.
                 
-                Российский экспортный центр также окажет Segezha Group финансовое содействие активам в рамках своих возможностей и полномочий в сфере страховой поддержки и предоставления государственных гарантий, а также в сфере кредитования иностранных покупателей российской продукции, работ и услуг.
+                        Российский экспортный центр также окажет Segezha Group финансовое содействие активам в рамках своих возможностей и полномочий в сфере страховой поддержки и предоставления государственных гарантий, а также в сфере кредитования иностранных покупателей российской продукции, работ и услуг.
                 
-                Соглашение рассчитано на 5 лет и вступило в силу с момента подписания. </p>
-           <p>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. </p>
-           <p>Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. </p>
+                        Соглашение рассчитано на 5 лет и вступило в силу с момента подписания. </p>
+                    <p>Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. </p>
+                    <p>Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. </p>
+                </div>
+            </div>
+            <div id="rightcolumnwrap">
+                <div id="rightcolumn">
+                    <h2> Новости и акции</h2>
+                    <p>Здесь новости и Как сообщил РБК Пермь директор ГК «Красный Октябрь» Александр Суслопаров, 25 июня компания подала заявку в минпромторг Пермского края на реализацию специнвестпроекта по строительству производства березового шпона. Заявленный объем инвестиций — 2 млрд рублей. </p>
+                    <p>Российский экспортный центр, как государственный институт поддержки и развития экспорта, способствующий расширению возможностей продвижения российского бизнеса на зарубежные рынки, и Segezha Group, как российская экспортно-ориентированная компания, договорились о синхронизации и реализации различных форм и инструментов поддержки экспорта результатов высокотехнологичного производства группы.
+                
+                            В рамках Соглашения стороны планируют разрабатывать совместные общественные и правовые инициативы по вопросам стимулирования экспорта продукции активов Segezha Group с опорой на возможности зарубежных представительств РЭЦ.
+                    
+                            Взаимное сотрудничество также предполагает организацию совместных маркетинговых исследований внутреннего и внешнего рынков, поиск зарубежных партнеров, содействие в оформлении экспортных контрактов и поддержку при прохождении экспортных процедур. Кроме того, в компетенции Российского экспортного центра - помощь в международной адаптации товаров группы компаний и обмен значимой информацией по улучшению условий ведения холдингом экспортной деятельности.
+                    
+                            Российский экспортный центр также о</p>
+                </div>
+            </div>
         </div>
+        <div id="contentworks" style="display: none">
+            <div class="wrap">
+                <div id="works">
+                    <img src="images/logo.jpg"> 
+                    <img src="images/logo.jpg">
+                    <img src="images/logo.jpg">
+                    <img src="images/logo.jpg">
+                    <img src="images/logo.jpg">
+                </div>
+            </div>
         </div>
-        <div id="rightcolumnwrap">
-        <div id="rightcolumn">
-            <p>Здесь новости и акцииКак сообщил РБК Пермь директор ГК «Красный Октябрь» Александр Суслопаров, 25 июня компания подала заявку в минпромторг Пермского края на реализацию специнвестпроекта по строительству производства березового шпона. Заявленный объем инвестиций — 2 млрд рублей. </p>
+        <div id="contentservise" style="display:none">
+            <div class="wrap">
+                <div id="servise">
+                    <ul>
+                        <li> мебель на заказ</li>
+                        <li> ремонт мебели</li>
+                        <li> модернизация мебели</li>
+                        <li> реставрация</li>
+                        <li> покраска</li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
+        <div id="contentcontacts" style="display: none">
+            <div class="wrap">
+                <div id="contacts">
+                    <p>Для связи позвоните нам или задайте вопрос в форме</p>
+                </div>
+            </div>
         </div>
         <div id="questionwrap">
-        <div id="question">
+            <div id="question">
                     <p>This is the form for question</p>
-                </div>
-                </div>
-        <div id="footerwrap">
-        <div id="footer">
-            <p>This is the Footer</p>
+            </div>
         </div>
+        <div id="footerwrap">
+            <div id="footer">
+                <p>This is the Footer</p>
+            </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
