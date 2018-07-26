@@ -28,3 +28,33 @@
         border: 1px solid red;
         border-width: 1px;
     }
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 11px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ff8a42 0%,
+		#664700);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff8a42),
+		to(#664700));
+	-moz-border-radius: 21px;
+	-webkit-border-radius: 21px;
+	border-radius: 21px;
+	border: 3px solid #003366;
+	-moz-box-shadow:
+		-4px 8px 6px rgba(000,000,000,1),
+		inset 0px 0px 11px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		-4px 8px 6px rgba(000,000,000,1),
+		inset 0px 0px 11px rgba(255,255,255,0.5);
+	box-shadow:
+		-4px 8px 6px rgba(000,000,000,1),
+		inset 0px 0px 11px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}

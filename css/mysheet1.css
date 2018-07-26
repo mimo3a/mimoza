@@ -56,14 +56,21 @@ p {
     
 }
 
-#workswrap {
-    width: 850px;
-    height: 700px;
+#works {
+    width: 980px;
+    height: 580px;
     float: left;
-    margin: 0 auto;
+    background: rgb(197, 194, 165);
+    border-radius: 10px;
+    border: 1px solid #867f1559;
+    margin: 5px;
+    overflow-y: scroll;
 }
 
 #main {
+    width: 780px;
+    height: 580px;
+    float: left;
     background: #FFFFFF;
     border-radius: 10px;
     border: 1px solid #ebebeb;
@@ -71,8 +78,8 @@ p {
 }
 
 #rightcolumnwrap {
-    width: 150px;
-    height: 550px;
+    width: 200px;
+    height: 580px;
     float: left;
     margin: 0 auto;
     overflow-y: scroll;
@@ -101,18 +108,65 @@ p {
     margin: 5px;
 }
 #questionwrap {
+    position: relative;
+    top: -20px;
+    border: 1px solid #1feb52;
     width: 600px;
+    height: 300px;
     float: center;
-    margin: 0 auto;
+    margin: 5px auto ;
     clear: both;
 }
 #question {
-    height: 40px;
+    height: 285px;
+    position: relative;
     background: #33FF66;
     border-radius: 10px;
     border: 1px solid #1feb52;
     margin: 5px;  
 }
+#labelfirstname {
+    width: 220px;
+    height: 50px;
+    position: relative;
+    top: px;
+    left: 4px;
+    border: 1px solid blue;
+}
+#labelemail {
+    width: 200px;
+    position: relative;
+    top: px;
+    left: 4px;
+    border: 1px solid blue;
+}
+#labelquestion {
+    width: 560px;
+    position: relative;
+    top: px;
+    left: 4px;
+    border: 1px solid blue; 
+}
+#labelreset {
+    width: 100px;
+    position: relative;
+    top: px;
+    left: 4px;
+    border: 1px solid blue;   
+}
+#labelsubmit {
+    width: 100px;
+    position: relative;
+    top: px;
+    left: 365px;
+    border: 1px solid blue;
+}
+
+
+
+
+
+
 #textLogo:{
     font-size: 2em;
 }
@@ -124,9 +178,22 @@ p {
     margin:auto; 
 }
 .wrap {
-    width: 850px;
+    width: 1000px;
     height: 700px;
     color: blue;
     float: left;
     margin: 0 auto; 
+}
+.listworks {
+    border: 8px solid white;
+    
+    width: 280px;
+    height: 200px;
+    float: left;
+    margin: 5px 10px;
+    overflow: scroll;
+    box-shadow: 4px 4px 6px #777777;
+}
+aside {
+    color: red;
 }
