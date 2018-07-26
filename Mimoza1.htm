@@ -15,10 +15,10 @@
         </div>
         <div id="navigationwrap">
             <div id="navigation">
-                <nav><span id="menuMain" onclick="selectMain()" style="cursor: pointer">Главная</span> 
-                    <span id="menuWorks" onclick="selectWorks()"style="cursor: pointer" >Наши работы</span> 
-                    <span id="menuServise" onclick="selectServise()"style="cursor: pointer">Услуги</span> 
-                    <span id="menuContacts" onclick="selectContacts()"style="cursor: pointer" >Контакты</span> 
+                <nav><button class="button" id="menuMain" onclick="selectMain()" style="cursor: pointer">Главная</button> 
+                     <button class="button" id="menuWorks" onclick="selectWorks()"style="cursor: pointer" >Наши работы</button> 
+                     <button class="button" id="menuServise" onclick="selectServise()"style="cursor: pointer">Услуги</button> 
+                     <button class="button"id="menuContacts" onclick="selectContacts()"style="cursor: pointer" >Контакты</button> 
                 </nav>
              </div>
         </div>
@@ -97,8 +97,8 @@
                     <h4><label id="labelfirstname"> Имя:<input type="text" name="firstname" size="33" maxlength="25" placeholder="Ваше Имя"></label></h4>
                     <h4><label id="labelemail"> e-mail:<input type="e-mail" name="email"size="30" maxlength="25" placeholder="Ваш электронный адрес"></label></h4>
                     <h4><textarea id="labelquestion" name="question" rows="5" cols="10">...текст сообщения...</textarea></h4>
-                    <input id="labelreset" class="formbutton" type="reset" value="очистить" >
-                    <input id="labelsubmit" class="formbutton" type="submit" value="отправить" onclick="clickSubmit()">
+                    <input id="labelreset" class="button" type="reset" value="очистить" >
+                    <input id="labelsubmit" class="button" type="submit" value="отправить" onclick="clickSubmit()">
                 </form>
             </div>
         </div>
