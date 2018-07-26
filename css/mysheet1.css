@@ -42,7 +42,8 @@ p {
     height: 50px;
     float: left;
     margin: 5px ;
-    text-align: center;
+    text-align: ;
+
     border: 1px solid black;
     background-color: white;
 }
@@ -56,9 +57,28 @@ p {
     margin: 5px;
     float: left;
     text-align:center;
+    word-spacing: 20px;
     color:#FFFFFF;
     
 }
+#menuMain {
+    position: relative;
+    left: px;
+}
+#menuWorks {
+    position: relative;
+    left: px;
+}
+#menuServise {
+    position: relative;
+    left: px;
+}
+#menuContacts {
+    position: relative;
+    left: px;
+}
+
+
 
 #works {
     width: 980px;
