@@ -1,26 +1,85 @@
 function selectMain(){
     contentmain.style.display="block";
-    menuMain.style.color="black";
     contentworks.style.display="none";
     contentservise.style.display="none";
     contentcontacts.style.display="none";
 }
 function selectWorks(){
-   document.getElementById("contentmain").style.display="none";
-   document.getElementById("contentworks").style.display="block";
-   document.getElementById("contentservise").style.display="none";
-   document.getElementById("contentcontacts").style.display="none"; 
-   document.getElementById("menuMain").style.color="white";
+   contentmain.style.display="none";
+   contentworks.style.display="block";
+   contentservise.style.display="none";
+   contentcontacts.style.display="none"; 
+   var element = document.getElementById("menuMain);
+    element.classList.remove("active");
+  
 }
 function selectServise(){
-   document.getElementById("contentmain").style.display="none";
-   document.getElementById("contentworks").style.display="none";
-   document.getElementById("contentservise").style.display="block";
-   document.getElementById("contentcontacts").style.display="none";    
+   contentmain.style.display="none";
+   contentworks.style.display="none";
+   contentservise.style.display="block";
+   contentcontacts.style.display="none";    
 }
 function selectContacts(){
-   document.getElementById("contentmain").style.display="none";
-   document.getElementById("contentworks").style.display="none";
-   document.getElementById("contentservise").style.display="none";
-   document.getElementById("contentcontacts").style.display="block";    
+   contentmain.style.display="none";
+   contentworks.style.display="none";
+   contentservise.style.display="none";
+   contentcontacts.style.display="block";    
 }
+function selectMain(){
+  var contentmain = document.getElementById("contentmain");
+  contentmain.classList.add("active");
+  contentmain.classList.remove("disactive");
+  var contentworks = document.getElementById("contentworks");
+  contentworks.classList.add("disactive");
+  contentworks.classList.remove("active");
+  var contentservise = document.getElementById("contentworks");
+  contentservise.classList.add("disactive");
+  contentservise.classList.remove("active"); 
+  var contentcontacts = document.getElementById("contentcontacts");
+  contentcontacts.classList.add("disactive");
+  contentcontacts.classList.remove("active"); 
+}
+function selectWorks() {
+  var contentmain = document.getElementById("contentmain");
+  contentmain.classList.add("disactive");
+  contentmain.classList.remove("active");
+  var contentworks = document.getElementById("contentworks");
+  contentworks.classList.add("active");
+  contentworks.classList.remove("disactive");
+  var contentservise = document.getElementById("contentworks");
+  contentservise.classList.add("disactive");
+  contentservise.classList.remove("active"); 
+  var contentcontacts = document.getElementById("contentcontacts");
+  contentcontacts.classList.add("disactive");
+  contentcontacts.classList.remove("active"); 
+} 
+function selectServise() {
+  var contentmain = document.getElementById("contentmain");
+  contentmain.classList.add("disactive");
+  contentmain.classList.remove("active");
+  var contentworks = document.getElementById("contentworks");
+  contentworks.classList.add("disactive");
+  contentworks.classList.remove("active");
+  var contentservise = document.getElementById("contentworks");
+  contentservise.classList.add("active");
+  contentservise.classList.remove("disactive"); 
+  var contentcontacts = document.getElementById("contentcontacts");
+  contentcontacts.classList.add("disactive");
+  contentcontacts.classList.remove("active"); 
+} 
+function selectContacts() {
+  var contentmain = document.getElementById("contentmain");
+  contentmain.classList.add("disactive");
+  contentmain.classList.remove("active");
+  var contentworks = document.getElementById("contentworks");
+  contentworks.classList.add("disactive");
+  contentworks.classList.remove("active");
+  var contentservise = document.getElementById("contentworks");
+  contentservise.classList.add("disactive");
+  contentservise.classList.remove("active"); 
+  var contentcontacts = document.getElementById("contentcontacts");
+  contentcontacts.classList.add("active");
+  contentcontacts.classList.remove("disactive"); 
+} 
+
+

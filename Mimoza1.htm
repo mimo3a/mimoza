@@ -14,15 +14,15 @@
             </div>
         </div>
         <div id="navigationwrap">
-            <div id="navigation">
-                <nav><button class="button" id="menuMain" onclick="selectMain()" style="cursor: pointer">Главная</button> 
-                     <button class="button" id="menuWorks" onclick="selectWorks()"style="cursor: pointer" >Наши работы</button> 
-                     <button class="button" id="menuServise" onclick="selectServise()"style="cursor: pointer">Услуги</button> 
-                     <button class="button"id="menuContacts" onclick="selectContacts()"style="cursor: pointer" >Контакты</button> 
+            <div id="navigat">
+                <nav><button class="button active" id="menuMain" style="cursor: pointer"; >Главная</button> 
+                     <button class="button" id="menuWorks" style="cursor: pointer" ;>Наши работы</button> 
+                     <button class="button" id="menuServise" style="cursor: pointer ";>Услуги</button> 
+                     <button class="button" id="menuContacts" style="cursor: pointer"; >Контакты</button> 
                 </nav>
              </div>
         </div>
-        <div id="contentmain" style="display:block">
+        <div class="part" id="contentmain" style="display:block"> 
             <div class="wrap">
                 <div id="main">
                     <p>Киров. 11 июля в ходе <aside>торжественного мероприятия по запуску </aside>нового производства премиальной березовой фанеры Вятского фанерного комбината Segezha Group (входит в АФК «Система») и Российский экспортный центр (РЭЦ) подписали Соглашение о сотрудничестве. Документ подписали Президент, Председатель правления Segezha Group Михаил Шамолин и Исполнительный директор АО «Российский экспортный центр» Алексей Тюпанов.
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div id="contentworks" style="display: none">
+        <div class="part" id="contentworks" style="display: none">
             <div class="wrap">
                 <div id="works">
                     <img class="listworks" id="k001" src="images/k001.jpg"  alt="kitchen"> 
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div id="contentservise" style="display:none">
+        <div class="part" id="contentservise" style="display:none">
             <div class="wrap">
                 <div id="servise">
                     <ul>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div id="contentcontacts" style="display: none">
+        <div class="part" id="contentcontacts" style="display: none">
             <div class="wrap">
                 <div id="contacts">
                     <p>Для связи позвоните нам или задайте вопрос в форме</p>
@@ -108,6 +108,6 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/butscript.js"></script>
 </body>
 </html>
