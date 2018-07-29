@@ -1,85 +1,134 @@
-function selectMain(){
-    contentmain.style.display="block";
-    contentworks.style.display="none";
-    contentservise.style.display="none";
-    contentcontacts.style.display="none";
-}
-function selectWorks(){
-   contentmain.style.display="none";
-   contentworks.style.display="block";
-   contentservise.style.display="none";
-   contentcontacts.style.display="none"; 
-   var element = document.getElementById("menuMain);
-    element.classList.remove("active");
-  
-}
-function selectServise(){
-   contentmain.style.display="none";
-   contentworks.style.display="none";
-   contentservise.style.display="block";
-   contentcontacts.style.display="none";    
-}
-function selectContacts(){
-   contentmain.style.display="none";
-   contentworks.style.display="none";
-   contentservise.style.display="none";
-   contentcontacts.style.display="block";    
-}
-function selectMain(){
+
+function selectMain() {
+
+// кнопка меню главная
+
+  var buttonmain = document.getElementById("menuMain");
+  buttonmain.classList.add("active");
+  buttonmain.classList.remove("disactive");
+  var buttonworks = document.getElementById("menuWorks");
+  buttonworks.classList.add("disactive");
+  buttonworks.classList.remove("active");
+  var buttonservise = document.getElementById("menuServise");
+  buttonservise.classList.add("disactive");
+  buttonservise.classList.remove("active"); 
+  var buttoncontacts = document.getElementById("menuContacts");
+  buttoncontacts.classList.add("disactive");
+  buttoncontacts.classList.remove("active"); 
+
+//переключение раздела на главную
+
   var contentmain = document.getElementById("contentmain");
-  contentmain.classList.add("active");
-  contentmain.classList.remove("disactive");
+  contentmain.classList.add("activepart");
+  contentmain.classList.remove("disactivepart");
   var contentworks = document.getElementById("contentworks");
-  contentworks.classList.add("disactive");
-  contentworks.classList.remove("active");
-  var contentservise = document.getElementById("contentworks");
-  contentservise.classList.add("disactive");
-  contentservise.classList.remove("active"); 
+  contentworks.classList.add("disactivepart");
+  contentworks.classList.remove("activepart");
+  var contentservise = document.getElementById("contentservise");
+  contentservise.classList.add("disactivepart");
+  contentservise.classList.remove("activepart");
   var contentcontacts = document.getElementById("contentcontacts");
-  contentcontacts.classList.add("disactive");
-  contentcontacts.classList.remove("active"); 
+  contentcontacts.classList.add("disactivepart");
+  contentcontacts.classList.remove("activepart");  
 }
+
 function selectWorks() {
-  var contentmain = document.getElementById("contentmain");
-  contentmain.classList.add("disactive");
-  contentmain.classList.remove("active");
+
+//кнопка меню работы
+
+  var buttonmain = document.getElementById("menuMain");
+  buttonmain.classList.add("disactive");
+  buttonmain.classList.remove("active");
+  var buttonworks = document.getElementById("menuWorks");
+  buttonworks.classList.add("active");
+  buttonworks.classList.remove("disactive");
+  var buttonservise = document.getElementById("menuServise");
+  buttonservise.classList.add("disactive");
+  buttonservise.classList.remove("active"); 
+  var buttoncontacts = document.getElementById("menuContacts");
+  buttoncontacts.classList.add("disactive");
+  buttoncontacts.classList.remove("active");
+
+//переключение на раздел работы
+
+var contentmain = document.getElementById("contentmain");
+  contentmain.classList.add("disactivepart");
+  contentmain.classList.remove("activepart");
   var contentworks = document.getElementById("contentworks");
-  contentworks.classList.add("active");
-  contentworks.classList.remove("disactive");
-  var contentservise = document.getElementById("contentworks");
-  contentservise.classList.add("disactive");
-  contentservise.classList.remove("active"); 
+  contentworks.classList.add("activepart");
+  contentworks.classList.remove("disactivepart");
+  var contentservise = document.getElementById("contentservise");
+  contentservise.classList.add("disactivepart");
+  contentservise.classList.remove("activepart");
   var contentcontacts = document.getElementById("contentcontacts");
-  contentcontacts.classList.add("disactive");
-  contentcontacts.classList.remove("active"); 
-} 
+  contentcontacts.classList.add("disactivepart");
+  contentcontacts.classList.remove("activepart");  
+}
 function selectServise() {
-  var contentmain = document.getElementById("contentmain");
-  contentmain.classList.add("disactive");
-  contentmain.classList.remove("active");
-  var contentworks = document.getElementById("contentworks");
-  contentworks.classList.add("disactive");
-  contentworks.classList.remove("active");
-  var contentservise = document.getElementById("contentworks");
-  contentservise.classList.add("active");
-  contentservise.classList.remove("disactive"); 
-  var contentcontacts = document.getElementById("contentcontacts");
-  contentcontacts.classList.add("disactive");
-  contentcontacts.classList.remove("active"); 
-} 
+
+//кнопка меню сервис
+
+  var buttonmain = document.getElementById("menuMain");
+  buttonmain.classList.add("disactive");
+  buttonmain.classList.remove("active");
+  var buttonworks = document.getElementById("menuWorks");
+  buttonworks.classList.add("disactive");
+  buttonworks.classList.remove("active");
+  var buttonservise = document.getElementById("menuServise");
+  buttonservise.classList.add("active");
+  buttonservise.classList.remove("disactive"); 
+  var buttoncontacts = document.getElementById("menuContacts");
+  buttoncontacts.classList.add("disactive");
+  buttoncontacts.classList.remove("active"); 
+
+//переключение на раздел сервис
+
+var contentmain = document.getElementById("contentmain");
+contentmain.classList.add("disactivepart");
+contentmain.classList.remove("activepart");
+var contentworks = document.getElementById("contentworks");
+contentworks.classList.add("disactivepart");
+contentworks.classList.remove("activepart");
+var contentservise = document.getElementById("contentservise");
+contentservise.classList.add("activepart");
+contentservise.classList.remove("disactivepart");
+var contentcontacts = document.getElementById("contentcontacts");
+contentcontacts.classList.add("disactivepart");
+contentcontacts.classList.remove("activepart");  
+}
+
 function selectContacts() {
+
+//кнопка меню контакты
+
+  var buttonmain = document.getElementById("menuMain");
+  buttonmain.classList.add("disactive");
+  buttonmain.classList.remove("active");
+  var buttonworks = document.getElementById("menuWorks");
+  buttonworks.classList.add("disactive");
+  buttonworks.classList.remove("active");
+  var buttonservise = document.getElementById("menuServise");
+  buttonservise.classList.add("disactive");
+  buttonservise.classList.remove("active"); 
+  var buttoncontacts = document.getElementById("menuContacts");
+  buttoncontacts.classList.add("active");
+  buttoncontacts.classList.remove("disactive"); 
+
+//переключение на раздел контакты
+
   var contentmain = document.getElementById("contentmain");
-  contentmain.classList.add("disactive");
-  contentmain.classList.remove("active");
-  var contentworks = document.getElementById("contentworks");
-  contentworks.classList.add("disactive");
-  contentworks.classList.remove("active");
-  var contentservise = document.getElementById("contentworks");
-  contentservise.classList.add("disactive");
-  contentservise.classList.remove("active"); 
-  var contentcontacts = document.getElementById("contentcontacts");
-  contentcontacts.classList.add("active");
-  contentcontacts.classList.remove("disactive"); 
-} 
+contentmain.classList.add("disactivepart");
+contentmain.classList.remove("activepart");
+var contentworks = document.getElementById("contentworks");
+contentworks.classList.add("disactivepart");
+contentworks.classList.remove("activepart");
+var contentservise = document.getElementById("contentservise");
+contentservise.classList.add("disactivepart");
+contentservise.classList.remove("activepart");
+var contentcontacts = document.getElementById("contentcontacts");
+contentcontacts.classList.add("activepart");
+contentcontacts.classList.remove("disactivepart");  
+}
+
 
 
