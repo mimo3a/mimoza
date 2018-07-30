@@ -2,9 +2,10 @@
 
 
 body {
+    background-color: #DCDCDC;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 13px;
-    color:#333
+    color:black;
 }
 
 p {
@@ -34,8 +35,20 @@ p {
     margin: 5px;
 
 }
-#textLogo {
-    font-size: 2em;
+#textlogo {
+    
+    
+    
+    font-size:14px;
+    position: relative;
+    float: right;
+    top: -10px;
+    left: px;
+}
+#logo {
+    position: relative;
+    float: left;
+    left: 5px;
 }
 #navigationwrap {
     width: 990px;
@@ -45,13 +58,13 @@ p {
     text-align: ;
 
     border: 1px solid black;
-    background-color: white;
+    background-color: rgb(187, 187, 187);
 }
 
 #navigat {
     width: 980px;
     height: 40px;
-    background: #FFCC33;
+    background: gray;
     border-radius: 10px;
     border: 1px solid #ebb81f;
     margin: 5px;
@@ -60,22 +73,7 @@ p {
     word-spacing: 20px;
     
 }
-#menuMain {
-    position: relative;
-    left: px;
-}
-#menuWorks {
-    position: relative;
-    left: px;
-}
-#menuServise {
-    position: relative;
-    left: px;
-}
-#menuContacts {
-    position: relative;
-    left: px;
-}
+
 
 
 
@@ -95,6 +93,7 @@ p {
     height: 580px;
     float: left;
     background: #FFFFFF;
+    color: black;
     border-radius: 10px;
     border: 1px solid #ebebeb;
     margin: 5px;
@@ -110,7 +109,7 @@ p {
 }
 
 #rightcolumn {
-    background: #CC33FF;
+    background-color: cornsilk;
     border-radius: 10px;
     border: 1px solid #b81feb;
     margin: 5px;
@@ -125,7 +124,7 @@ p {
 
 #footer {
     height: 40px;
-    background: #33FF66;
+    background: #C0C0C0;
     border-radius: 10px;
     border: 1px solid #1feb52;
     margin: 5px;
@@ -143,7 +142,9 @@ p {
 #question {
     height: 285px;
     position: relative;
-    background: #33FF66;
+    
+    line-height: 13px;
+    background:#F5F5F5 ;
     border-radius: 10px;
     border: 1px solid #1feb52;
     margin: 5px;  
@@ -185,17 +186,17 @@ p {
     border: 1px solid blue;
 }
 
-
-
-
-
-
 #textLogo:{
+    width: 100px;
+    position: relative;
+    text-align: right;
+    left: 50px;
+    tpo: -100px;
     font-size: 2em;
 }
 #wrapper {
     width: 1000px;
-    background: #33FF66;
+    background: rgb(240, 240, 240);
     border-radius: 10px;
     border: 1px solid #1feb52;
     margin:auto; 
@@ -203,7 +204,7 @@ p {
 .wrap {
     width: 1000px;
     height: 700px;
-    color: blue;
+    
     float: left;
     margin: 0 auto; 
 }
@@ -217,23 +218,60 @@ p {
     overflow: scroll;
     box-shadow: 4px 4px 6px #777777;
 }
-aside {
-    color: red;
-}
-.active, .button:hover {
+.active  {
+    
     
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
-        color: white;
-        padding: 10px 20px;
+        color: #000000;
+        padding: 7px 20px;
         background: -moz-linear-gradient(
             top,
-            #42ff42 0%,
-            #146600);
+            #ffffff 0%,
+            #ebebeb 51%,
+            #ceced9 2%,
+            #8a8b9e 75%,
+            #b5b5b5);
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#ffffff),
+            color-stop(0.51, #ebebeb),
+            color-stop(0.2, #ceced9),
+            color-stop(0.75, #8a8b9e),
+            to(#b5b5b5));
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #2f8f06;
+        -moz-box-shadow:
+            0px 1px 3px rgba(012,020,010,0.5),
+            inset 0px 0px 3px rgba(255,255,255,1);
+        -webkit-box-shadow:
+            0px 1px 3px rgba(012,020,010,0.5),
+            inset 0px 0px 3px rgba(255,255,255,1);
+        box-shadow:
+            0px 1px 3px rgba(012,020,010,0.5),
+            inset 0px 0px 3px rgba(255,255,255,1);
+        text-shadow:
+            0px 5px 0px rgba(255,255,255,0.2),
+            0px 2px 0px rgba(242,243,245,0.6);
+    }
+    
+    
+    
+.disactive {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: black;
+        padding: 8px 20px;
+        background: -moz-linear-gradient(
+            top,
+            #42ff42 50%,
+            #7e0a3a);
         background: -webkit-gradient(
             linear, left top, left bottom,
             from(#42ff42),
-            to(#146600));
+            to(hsla(331, 62%, 26%, 0.555)));
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         border-radius: 10px;
@@ -250,46 +288,65 @@ aside {
         text-shadow:
             0px -1px 0px rgba(000,000,000,0.4),
             0px 1px 0px rgba(255,255,255,0.3);
-    }
-    
-.disactive {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        color: black;
-        padding: 10px 20px;
-        background: -moz-linear-gradient(
-            top,
-            #42ff42 50%,
-            #7e0a3a);
-        background: -webkit-gradient(
-            linear, left top, left bottom,
-            from(#42ff42),
-            to(hsla(331, 62%, 26%, 0.555)));
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        border: 2px solid #134201;
-        -moz-box-shadow:
-            0px 1px 3px rgba(000,000,000,0.5),
-            inset 0px 0px 2px rgba(255,255,255,1);
-        -webkit-box-shadow:
-            0px 1px 3px rgba(000,000,000,0.5),
-            inset 0px 0px 2px rgba(255,255,255,1);
-        box-shadow:
-            0px 1px 3px rgba(000,000,000,0.5),
-            inset 0px 0px 2px rgba(255,255,255,1);
-        text-shadow:
-            0px -1px 0px rgba(000,000,000,0.4),
-            0px 1px 0px rgba(255,255,255,0.3);
+            cursor: pointer;
      }   
  .activepart {
      display: block;
+     
  }  
  .disactivepart {
      display: none;
+     
  }                 
 
 .button:hover {
         
         color: white;
     }
+ #tablecontactswrap {
+
+        width: 500px;
+        height: 285px;
+        border: 2px solid #98FB98;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        position: relative;
+        float: left;
+        top: 150px;
+        left: 200px;
+        
+
+
+
+
+    }
+#tablecontacts {
+        position: relative;
+        float: left;
+        font-size:16px;
+        font-style: italic ;
+}
+.listactions {
+    border: 8px solid white;
+    
+    
+    width: 400px;
+    height: 250px;
+    float: left;
+    margin: 5px 10px;
+    overflow: scroll;
+    box-shadow: 4px 4px 6px #777777;
+}
+.actionsevent {
+    font-size: 14px;
+    width: 780px;
+    height: 300px;
+    overflow:;
+}
+#actions {
+    width: 980px;
+    height:580px;
+    position: relative;
+    float: left;
+    overflow: scroll;
+}
