@@ -156,9 +156,12 @@ function selectContacts() {
 
 //кнопка меню контакты
 
-  var buttonmain = document.getElementById("menuMain");
-      buttonmain.classList.add("disactive");
-      buttonmain.classList.remove("active");
+
+addRemoveClassByElement("menuMain", "disactive", "active")  
+
+//   var buttonmain = document.getElementById("menuMain");
+//       buttonmain.classList.add("disactive");
+//       buttonmain.classList.remove("active");
   var buttonworks = document.getElementById("menuWorks");
       buttonworks.classList.add("disactive");
       buttonworks.classList.remove("active");
@@ -174,22 +177,33 @@ function selectContacts() {
 
 //переключение на раздел контакты
 
-  var contentmain = document.getElementById("contentmain");
-      contentmain.classList.add("disactivepart");
-      contentmain.classList.remove("activepart");
-  var contentworks = document.getElementById("contentworks");
-      contentworks.classList.add("disactivepart");
-      contentworks.classList.remove("activepart");
-  var contentservise = document.getElementById("contentservise");
-      contentservise.classList.add("disactivepart");
-      contentservise.classList.remove("activepart");
-  var contentactions = document.getElementById("contentactions");
-      contentactions.classList.add("disactivepart");
-      contentactions.classList.remove("activepart");  
-  var contentcontacts = document.getElementById("contentcontacts");
-      contentcontacts.classList.add("activepart");
-      contentcontacts.classList.remove("disactivepart");  
+//   var contentmain = document.getElementById("contentmain");
+//       contentmain.classList.add("disactivepart");
+//       contentmain.classList.remove("activepart");
+
+      addRemoveClassByElement("contentmain", "disactivepart", "activepart")  
+      addRemoveClassByElement("contentworks", "disactivepart", "activepart")  
+      addRemoveClassByElement("contentservise", "disactivepart", "activepart")  
+      addRemoveClassByElement("contentactions", "disactivepart", "activepart")  
+      addRemoveClassByElement("contentcontacts", "activepart", "disactivepart")  
+//   var contentworks = document.getElementById("contentworks");
+//       contentworks.classList.add("disactivepart");
+//       contentworks.classList.remove("activepart");
+//   var contentservise = document.getElementById("contentservise");
+//       contentservise.classList.add("disactivepart");
+//       contentservise.classList.remove("activepart");
+//   var contentactions = document.getElementById("contentactions");
+//       contentactions.classList.add("disactivepart");
+//       contentactions.classList.remove("activepart");  
+    //     var contentcontacts = document.getElementById("contentcontacts");
+    //   contentcontacts.classList.add("activepart");
+    //   contentcontacts.classList.remove("disactivepart");  
 }
+function addRemoveClassByElement(element, addClass, removeClass){
+    var elem = document.getElementById(element);
+    contentmain.classList.add(addClass);
+    contentmain.classList.remove(removeClass);
+} 
 
 
 
